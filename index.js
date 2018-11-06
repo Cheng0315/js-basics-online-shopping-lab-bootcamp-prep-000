@@ -10,7 +10,15 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var max = 1000;
+  var min = 1;
+  var itemObj = {
+    itemName : item,
+    itemPrice : Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  cart.push(itemObj);
+  return `${item} has been added to the cart.`;
 }
 
 function viewCart() {
