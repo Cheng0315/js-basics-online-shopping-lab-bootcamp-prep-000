@@ -19,7 +19,7 @@ function addToCart(item) {
   };
 
   cart.push(itemObj);
-  return `${item} has been added to the cart.`;
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
