@@ -14,7 +14,7 @@ function addToCart(item) {
   var min = 1;
   var itemObj = {
     itemName : item,
-    itemPrice : Math.floor(Math.random() * (max - min + 1)) + min;
+    itemPrice : Math.floor(Math.random() * (max - min + 1)) + min
   };
 
   cart.push(itemObj);
