@@ -12,9 +12,10 @@ function setCart(c) {
 function addToCart(item) {
   var max = 1000;
   var min = 1;
+  var price = Math.floor(Math.random() * (max - min + 1)) + min;
   var itemObj = {
     itemName : item,
-    itemPrice : Math.floor(Math.random() * (max - min + 1)) + min
+    itemPrice : price
   };
 
   cart.push(itemObj);
